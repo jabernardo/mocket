@@ -12,3 +12,9 @@ endpoints:
       success: true
       data:
         message: "Hello World"
+  - path: /v1/submit
+    method: POST
+    status: 403
+    body:
+      success: false
+      message: "Forbidden"
