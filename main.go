@@ -72,7 +72,7 @@ func main() {
 
 	log.Println("Configuration File Loaded:", fullConfigPath)
 
-	config, err := os.ReadFile(configFile)
+	config, err := os.ReadFile(fullConfigPath)
 
 	if err != nil {
 		log.Fatalf("Could not read configuration: %v", err)
