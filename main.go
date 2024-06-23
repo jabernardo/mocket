@@ -54,7 +54,7 @@ func serveMockAPI(data []byte) {
 		mux.HandleFunc(muxPath, generateHandleFunc(t.Endpoints[i]))
 	}
 
-	log.Println("Running Server...")
+	log.Printf("Running Server... http://localhost:%d\n", t.Port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf("%s:%d", "", t.Port), mux))
 }
 
