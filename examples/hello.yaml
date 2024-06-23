@@ -1,0 +1,14 @@
+name: "hello-world"
+port: 3000
+endpoints:
+  - path: /v1/hello
+    method: GET
+    status: 200
+    delay: 2000
+    headers:
+      - name: Content-Type
+        value: application/json
+    body:
+      success: true
+      data:
+        message: "Hello World"
